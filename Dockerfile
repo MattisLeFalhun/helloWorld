@@ -3,3 +3,4 @@ COPY . helloWorld/src
 WORKDIR helloWorld/src
 RUN javac helloWorld.java
 CMD ["java", "helloWorld"]
+CMD ["java", "-version"]
