@@ -1,6 +1,5 @@
 FROM openjdk:8-alpine3.8
-COPY . helloWorld/src
-WORKDIR helloWorld/src
+COPY . /myapp
+WORKDIR /myapp
 RUN javac helloWorld.java
-CMD ["java", "helloWorld"]
-CMD ["java", "-version"]
+RUN java helloWorld
